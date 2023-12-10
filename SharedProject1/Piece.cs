@@ -8,8 +8,8 @@ namespace SharedProject1
 {
     public abstract class Piece
     {
-        public int X {get;set;}
-        public int Y { get;set;}
+        public int X {get;private set;}
+        public int Y { get; private set; }
 
         public Piece(int x, int y)
         {
