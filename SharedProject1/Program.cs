@@ -20,7 +20,6 @@ namespace SharedProject1
                     throw new ArgumentOutOfRangeException("Вы объяявили больше 10 фигур");
                 string[] values = line.Split(' ');
                 Tuple<string, int, int> pair = new Tuple<string, int, int>(values[0], Convert.ToInt32(values[1]), Convert.ToInt32(values[2]));
-                Console.WriteLine(pair.Item1);
                 Piece obj;
                 switch (pair.Item1)
                 {
